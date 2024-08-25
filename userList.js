@@ -9,8 +9,15 @@ const userList = [
   {
     id: 2,
     name: "Luana",
+    username: "luelis",
     age: 21,
-    nationality: "German",
+    nationality: "Germany",
+  },
+  {
+    id: 3,
+    name: "Pototo",
+    age: 20,
+    nationality: "India",
   },
 ];
 
