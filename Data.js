@@ -54,4 +54,25 @@ const userList = [
   },
 ];
 
-module.exports = { userList };
+const movieList = [
+  {
+    id: 1,
+    name: "Interstellar",
+    dateReleased: 2014,
+    rate: 9,
+  },
+  {
+    id: 2,
+    name: "Batman: The Dark Knight",
+    dateReleased: 2008,
+    rate: 10,
+  },
+  {
+    id: 3,
+    name: "Cars",
+    dateReleased: 2006,
+    rate: 8,
+  },
+];
+
+module.exports = { userList, movieList };

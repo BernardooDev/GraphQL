@@ -1,4 +1,4 @@
-const { userList } = require("../userList");
+const { userList, movieList } = require("../Data");
 const _ = require("lodash");
 
 const resolvers = {
@@ -10,6 +10,14 @@ const resolvers = {
       const id = args.id;
       const user = _.find(userList, { id: Number(id) });
       return user;
+    },
+    movies: () => {
+      return movieList;
+    },
+    movie: (parent, args) => {
+      const name = args.name;
+      const movie = _.find(movieList, { name });
+      return movie;
     },
   },
 };
